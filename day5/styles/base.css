@@ -1,0 +1,179 @@
+/* normalize css 重置样式 */
+body {
+    margin:0;
+    padding:0;
+}
+ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+/* layout css 布局CSS */
+.container-fluid {
+    width: 92%;
+    padding: 0 4%;
+}
+
+.container {
+    box-sizing: border-box;
+    width:100%;
+    padding: 0 8px;
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+}
+@media (min-width:992px) {
+    .container {
+        max-width:992px;
+        padding:0 16px;
+        margin:0 auto;
+    }
+}
+
+
+/* large desktop */
+@media (min-width:1200px) {
+    .container {
+        max-width: 1200px;
+        padding:0 16px;
+        margin:0 auto;
+    }
+}
+
+/* 栅格css */
+.row {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+[class*="col-"] {
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.col {
+    flex-basis: 0;
+    flex-grow:1;
+    max-width:100%;
+}
+
+/* .col-xs-1到.col-xs-24都应该列出来，这里只列出必要 */
+.col-4, .col-xs-4 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+.col-6, .col-xs-6 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.col-8, .col-xs-8 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.col-12, .col-xs-12 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-16, .col-xs-16 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
+.col-18, .col-xs-18 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.col-24, .col-xs-24 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.col-sm-12,.col-sm-24 {
+    width:100%;
+}
+
+/* .col-sm-*, .col-md-* 只在它那个屏幕尺寸及以上才会生效，否则它们的表现就跟.col-xs-24是一样的
+ * 这里使用.col-md-*展示它们的定义，其他尺寸的定义读者可自行补充。
+ */
+.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,
+.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11.col-md-12,
+.col-md-13,.col-md-14,.col-md-15,.col-md-16,.col-md-17.col-md-18,
+.col-md-19,.col-md-20,.col-md-21,.col-md-22,.col-md-23.col-md-24 {
+    width:100%;    
+}
+
+/* sm: .col-sm-* 都在这里定义,只列1，2项当示例，其他自行补充 */
+@media (min-width:576px) {
+    .col-sm-12 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* md .col-md-* 都在这里定义，只列1，2项当示例，其他自行补充 */
+@media (min-width:768px) {
+    .col-md-6 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-md-18 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+}
+
+/* lg .col-lg-* 都在这里定义，未列出，自行补充 */
+@media (min-width:992px) {
+
+}
+
+/* xl .col-xl-* 都在这里定义，未列出，自行补充 */
+@media (min-width:1200px) {
+
+}
+
+
+.row-justify-center {
+    justify-content: center;
+}
+
+
+
+/* typo css 基本排版(文字，图片） */
+.text-center {
+    text-align:center;
+}
+
+.img-fluid {
+    max-width:100%;
+    height: auto;
+}
+
+/* 组件 */
+.button {
+    display:inline-block;
+    background:transparent;
+    cursor: pointer;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 4px 12px;
+}
+
+.button img {
+    width: 30px;
+    height: 30px;
+}
+
+.show {
+    display:flex !important;
+}
+.hidden {
+    display:none !important;
+}

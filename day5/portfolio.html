@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <style>
+
+        header {
+            background-color:rgb(255,76,79);
+        }
+
+        .icon {
+            width: 32px;
+            height: 32px;
+        }
+
+        .header-title {
+            display:flex;
+            flex:1;
+            flex-direction: row;
+            align-items:center;
+            height:64px;
+        }
+
+        .nav {
+            height:0;
+            transition: height .5s;
+            flex-direction: column;
+            justify-content: flex-end;
+            flex: 0 0 100%;
+        }
+
+        .nav ul {
+            display:flex;
+            flex-direction: column;
+        }
+        .nav ul>li {
+            display: flex;
+            flex-direction: row;            
+        }
+
+        .nav ul>li>a {
+            display:inline-block;
+            padding:8px;
+            color:white;
+        }
+        .section-title {
+            text-align:center;
+        }
+        
+
+        footer {
+            background-color:rgb(128,0,19);
+            min-height:300px;
+            padding: 32px 0;
+        }
+        footer .left {
+            color:white;
+        }
+        footer .right img {
+            object-fit: contain;
+            
+        }
+        footer .copyright {
+            color: white;
+            text-align: center;
+        }
+        .gallery {
+            margin: 0 -8px;
+        }
+        .gallery li {
+            padding: 4px 8px;   
+        }
+
+        .card {                
+            border:1px solid#f5222d ;  
+            background-color: #ffccc7;
+            padding: 8px;
+            border-radius: 8px;
+        }
+        .card img {
+            height: 240px;
+            width:100%;
+        }
+        @media (min-width: 576px) {
+            .card img {
+                height: 320px;
+            }
+        }
+        .button-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+
+        @media (min-width: 768px) {
+            .button-wrapper {
+                display:none;
+            }
+            .nav {
+                display:flex;
+                flex-direction: row;
+                flex:1;
+                height:auto;
+            }
+            .nav ul {
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container row">
+                <div class="header-title">
+                    <img src="images/bird.png" alt="logo" class="icon">
+                    <span>极客大叔的爱好</span>
+                </div>
+                <div class="button-wrapper">
+                    <span class="button" id="menu-button" >
+                        <img src="images/list.svg" alt="" style="color:gray;">
+                    </span>
+                </div>
+                <nav class="nav menu-container" id="menu-container">      
+                        <ul class="menu" id="menu">
+                            <li><a href="#movie">喜欢的电影</a></li>
+                            <li><a href="#book">喜欢的书</a></li>
+                            <li><a href="#footer">聊一聊</a></li>
+                        </ul>           
+                </nav>
+        </div>
+
+    </header>
+    <section>
+        <div class="container">
+            <h2 class="section-title" id="movie">喜欢的电影</h2>            
+            <ul class="gallery row">
+                <li class="col-xs-12 col-md-6">
+                    <div class="card">
+                        <img  class="img-fluid" referrer="no-referrer" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2604517782.jpg" alt="">
+                        <h4 class="text-center">春潮</h4>
+                    </div>
+
+                </li>
+                <li class="col-xs-12 col-md-6">
+                    <div class="card">
+                        <img  class="img-fluid" src="https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2594916975.jpg" alt="">
+                        <h4 class="text-center">真心半解</h4>
+                    </div>
+                </li>
+                <li class="col-xs-12 col-md-6">
+                    <div class="card">
+                        <img  class="img-fluid" src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2570280248.jpg" alt="">
+                        <h4 class="text-center">鲁邦三世</h4>
+                    </div>
+  
+                </li>
+                <li class="col-xs-12 col-md-6">
+                    <div class="card">
+                        <img class="img-fluid" src="https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2575357474.jpg" alt="">
+                        <h4 class="text-center">爱情人偶</h4>
+                    </div>
+
+                </li>
+            </ul>
+        </div>        
+        <div class="container">
+            <h2 class="text-center" id="book">喜欢的书</h2>
+            <ul class="gallery row">
+                <li class="col-xs-12 col-md-6">
+                    <div class="card">
+                        <img src="https://img3.doubanio.com/view/subject/s/public/s33619103.jpg" alt="">
+                        <h3 calss="text-center">永远不要说你老了</h3>
+                    </div>
+                </li>
+                <li class="col-xs-12 col-md-6">
+                    <div class="card">
+                        <img src="https://img1.doubanio.com/view/subject/s/public/s33657908.jpg" alt="">
+                        <h3 class="text-center">长安客</h3>
+                    </div>
+                </li>
+                <li class="col-xs-12 col-md-6">
+                    <div class="card">
+                        <img src="https://img1.doubanio.com/view/subject/s/public/s33630708.jpg" alt="">
+                        <h3 class="text-center">矮人星上的矮人</h3>
+                    </div>
+                </li>
+                <li class="col-xs-12 col-md-6">
+                    <div class="card">
+                        <img src="https://img3.doubanio.com/view/subject/s/public/s33640730.jpg" alt="">
+                        <h3 class="text-center">秋园</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4">1</div>
+                <div class="col-xs-8">2</div>
+                <div class="col-xs-4">3</div>
+                <div class="col-xs-8">4</div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-18 left">
+                    王小波说他是一只特立独行的猪，那我就是做一只特立独行的鸟吧。交个朋友吧，扫下右侧二维码。
+                </div>
+                <div class="col-sm-12 col-md-6 right ">
+                    <img src="images/qrcode.png"  alt="">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container copyright">
+            版权所有 &copy; 极客大叔
+        </div>
+    </footer>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $('#menu-button').click(function (){
+            //$('#menu-container').toggleClass('show');
+            var height =  $('#menu-container').height();
+            if (height) {
+                $('#menu-container').height(0);
+            } else {
+                $('#menu-container').height($('#menu').height());
+            }
+            console.log('height', $('#menu').height(), el.clientHeight);
+        })
+    </script>
+</body>
+
+</html>
