@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer" />
-    <title>Portfolio</title>
+    <link rel="shortcut icon" href="dist/images/bird-32.png" />
+    <title>个人展示页</title>
     <link rel="stylesheet" href="styles/base.css">
     <style>
 
@@ -115,11 +116,24 @@
 
         .banner {
             height: 375px;
-            background-image: url('images/sky.jpg');
+            background-image: url('dist/images/sky-90.jpg');
             background-position: center;
             background-size:cover;
         }
     </style>
+    <script>
+    function loadJS(u) {
+        var r = document.getElementsByTagName("script")[0],
+            s = document.createElement("script");
+        s.src = u;
+        r.parentNode.insertBefore(s, r);
+    }
+
+    if (!window.HTMLPictureElement) {
+    loadJS("js/ls.respimg.min.js");
+    }
+    </script>
+    <script src="https://afarkas.github.io/lazysizes/plugins/bgset/ls.bgset.min.js"></script>
     <script src="js/lazysizes.min.js" async></script>
 </head>
 
@@ -127,7 +141,7 @@
     <header>
         <div class="container row">
                 <div class="header-title">
-                    <img src="images/bird.png" alt="logo" class="icon">
+                    <img src="dist/images/bird-32.png" alt="logo" class="icon">
                     <span>极客大叔的爱好</span>
                 </div>
                 <div class="button-wrapper">
@@ -145,8 +159,7 @@
         </div>
 
     </header>
-    <section class="banner">
-        
+    <section class="banner lazyload" data-bgset="dist/images/sky-540.jpg 540w, dist/images/sky-1080.jpg 1080w, dist/images/sky-original.jpg" data-sizes="auto">
     </section>
     <section>
         <div class="container">
@@ -154,27 +167,27 @@
             <ul class="gallery row">
                 <li class="col-xs-12 col-md-6">
                     <div class="card">
-                        <img  class="img-fluid lazyload" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2604517782.jpg" alt="">
+                        <img  class="img-fluid lazyload" data-src="dist/images/p2604517782-32.jpg"  data-srcset="dist/images/p2604517782-90.jpg 90w,dist/images/p2604517782-180.jpg 180w,dist/images/p2604517782-original.jpg" data-sizes="auto" alt="">
                         <h4 class="text-center">春潮</h4>
                     </div>
 
                 </li>
                 <li class="col-xs-12 col-md-6">
                     <div class="card">
-                        <img  class="img-fluid lazyload" src="https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2594916975.jpg" alt="">
+                        <img  class="img-fluid lazyload" data-src="dist/images/p2594916975-32.jpg"  data-srcset="dist/images/p2594916975-90.jpg 90w,dist/images/p2594916975-180.jpg 180w,dist/images/p2594916975-original.jpg" data-sizes="auto" alt="">
                         <h4 class="text-center">真心半解</h4>
                     </div>
                 </li>
                 <li class="col-xs-12 col-md-6">
                     <div class="card">
-                        <img  class="img-fluid lazyload" src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2570280248.jpg" alt="">
+                        <img  class="img-fluid lazyload" data-src="dist/images/p2570280248-32.jpg" data-srcset="dist/images/p2570280248-90.jpg 90w,dist/images/p2570280248-180.jpg 180w,dist/images/p2570280248-original.jpg"  data-sizes="auto" alt="">
                         <h4 class="text-center">鲁邦三世</h4>
                     </div>
   
                 </li>
                 <li class="col-xs-12 col-md-6">
                     <div class="card">
-                        <img class="img-fluid lazyload" src="https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2575357474.jpg" alt="">
+                        <img class="img-fluid lazyload" data-src="dist/images/p2575357474-32.jpg" data-srcset="dist/images/p2575357474-90.jpg 90w,dist/images/p2575357474-180.jpg 180w,dist/images/p2575357474-original.jpg" data-sizes="auto" alt="">
                         <h4 class="text-center">爱情人偶</h4>
                     </div>
 
@@ -186,25 +199,25 @@
             <ul class="gallery row">
                 <li class="col-xs-12 col-md-6">
                     <div class="card">
-                        <img src="https://img3.doubanio.com/view/subject/s/public/s33619103.jpg" class="img-fluid lazyload" alt="">
+                        <img data-src="dist/images/s33619103-32.jpg" data-srcset="dist/images/s33619103-90.jpg 90w,dist/images/s33619103-180.jpg 180w,dist/images/s33619103-original.jpg" class="img-fluid lazyload" alt="">
                         <h3 class="text-center">永远不要说你老了</h3>
                     </div>
                 </li>
                 <li class="col-xs-12 col-md-6">
                     <div class="card">
-                        <img  class="img-fluid lazyload"  src="https://img1.doubanio.com/view/subject/s/public/s33657908.jpg" alt="">
+                        <img  class="img-fluid lazyload"  data-src="dist/images/s33657908-32.jpg" data-srcset="dist/images/s33657908-90.jpg 90w,dist/images/s33657908-180.jpg 180w,dist/images/s33657908-original.jpg"  data-sizes="auto" alt="">
                         <h3 class="text-center">长安客</h3>
                     </div>
                 </li>
                 <li class="col-xs-12 col-md-6">
                     <div class="card">
-                        <img class="img-fluid lazyload" src="https://img1.doubanio.com/view/subject/s/public/s33630708.jpg" alt="">
+                        <img class="img-fluid lazyload" data-src="dist/images/s33630708-32.jpg"  data-srcset="dist/images/s33630708-90.jpg 90w,dist/images/s33630708-180.jpg 180w,dist/images/s33630708-original.jpg" data-sizes="auto" alt="">
                         <h3 class="text-center">矮人星上的矮人</h3>
                     </div>
                 </li>
                 <li class="col-xs-12 col-md-6">
                     <div class="card">
-                        <img class="img-fluid lazyload" src="https://img3.doubanio.com/view/subject/s/public/s33640730.jpg" alt="">
+                        <img class="img-fluid lazyload" data-src="dist/images/s33640730-32.jpg" data-srcset="dist/images/s33640730-180.jpg 180w" data-sizes="auto" alt="">
                         <h3 class="text-center">秋园</h3>
                     </div>
                 </li>
@@ -215,25 +228,25 @@
             <ul class="gallery row">
                 <li class="col-xs-12 col-md-6">
                     <div class="card">
-                        <img src="https://img3.doubanio.com/pview/event_poster/median/public/bec3771112188fe.jpg" class="img-fluid lazyload" alt="">
+                        <img data-src="dist/images/bec3771112188fe-32.jpg" data-srcset="dist/images/bec3771112188fe-90.jpg 90w,dist/images/bec3771112188fe-original.jpg" data-sizes="auto" class="img-fluid lazyload" alt="">
                         <h3 class="text-center">夏不为离 福州站</h3>
                     </div>
                 </li>
                 <li class="col-xs-12 col-md-6">
                     <div class="card">
-                        <img  class="img-fluid lazyload"  src="https://img1.doubanio.com/pview/event_poster/median/public/dc93fdd42f95e9c.jpg" alt="">
+                        <img  class="img-fluid lazyload"  data-src="dist/images/dc93fdd42f95e9c-32.jpg" ata-srcset="dist/images/dc93fdd42f95e9c-90.jpg 90w,dist/images/dc93fdd42f95e9c-180.jpg 180w,dist/images/dc93fdd42f95e9c-original.jpg" data-sizes="auto" alt="">
                         <h3 class="text-center">我想以世纪和你在一起</h3>
                     </div>
                 </li>
                 <li class="col-xs-12 col-md-6">
                     <div class="card">
-                        <img class="img-fluid lazyload" src="https://img3.doubanio.com/pview/event_poster/median/public/0036e366b181510.jpg" alt="">
+                        <img class="img-fluid lazyload" data-src="dist/images/0036e366b181510-32.jpg" data-srcset="dist/images/0036e366b181510-90.jpg 90w,dist/images/0036e366b181510-original.jpg"  data-sizes="auto" alt="">
                         <h3 class="text-center">梁静茹演唱会</h3>
                     </div>
                 </li>
                 <li class="col-xs-12 col-md-6">
                     <div class="card">
-                        <img class="img-fluid lazyload" src="https://img3.doubanio.com/pview/event_poster/median/public/2b988fcef5dd6d3.jpg" alt="">
+                        <img class="img-fluid lazyload" data-src="dist/images/2b988fcef5dd6d3-32.jpg" data-srcset="dist/images/2b988fcef5dd6d3-90.jpg 90w,dist/images/2b988fcef5dd6d3-original.jpg" data-sizes="auto" alt="">
                         <h3 class="text-center">理查德 克莱曼钢琴音乐会</h3>
                     </div>
                 </li>
