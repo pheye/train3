@@ -113,7 +113,14 @@
             }
         }
 
+        .banner {
+            height: 375px;
+            background-image: url('images/sky.jpg');
+            background-position: center;
+            background-size:cover;
+        }
     </style>
+    <script src="js/lazysizes.min.js" async></script>
 </head>
 
 <body>
@@ -138,33 +145,36 @@
         </div>
 
     </header>
+    <section class="banner">
+        
+    </section>
     <section>
         <div class="container">
             <h2 class="section-title" id="movie">喜欢的电影</h2>            
             <ul class="gallery row">
                 <li class="col-xs-12 col-md-6">
                     <div class="card">
-                        <img  class="img-fluid" referrer="no-referrer" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2604517782.jpg" alt="">
+                        <img  class="img-fluid lazyload" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2604517782.jpg" alt="">
                         <h4 class="text-center">春潮</h4>
                     </div>
 
                 </li>
                 <li class="col-xs-12 col-md-6">
                     <div class="card">
-                        <img  class="img-fluid" src="https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2594916975.jpg" alt="">
+                        <img  class="img-fluid lazyload" src="https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2594916975.jpg" alt="">
                         <h4 class="text-center">真心半解</h4>
                     </div>
                 </li>
                 <li class="col-xs-12 col-md-6">
                     <div class="card">
-                        <img  class="img-fluid" src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2570280248.jpg" alt="">
+                        <img  class="img-fluid lazyload" src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2570280248.jpg" alt="">
                         <h4 class="text-center">鲁邦三世</h4>
                     </div>
   
                 </li>
                 <li class="col-xs-12 col-md-6">
                     <div class="card">
-                        <img class="img-fluid" src="https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2575357474.jpg" alt="">
+                        <img class="img-fluid lazyload" src="https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2575357474.jpg" alt="">
                         <h4 class="text-center">爱情人偶</h4>
                     </div>
 
@@ -176,37 +186,58 @@
             <ul class="gallery row">
                 <li class="col-xs-12 col-md-6">
                     <div class="card">
-                        <img src="https://img3.doubanio.com/view/subject/s/public/s33619103.jpg" alt="">
-                        <h3 calss="text-center">永远不要说你老了</h3>
+                        <img src="https://img3.doubanio.com/view/subject/s/public/s33619103.jpg" class="img-fluid lazyload" alt="">
+                        <h3 class="text-center">永远不要说你老了</h3>
                     </div>
                 </li>
                 <li class="col-xs-12 col-md-6">
                     <div class="card">
-                        <img src="https://img1.doubanio.com/view/subject/s/public/s33657908.jpg" alt="">
+                        <img  class="img-fluid lazyload"  src="https://img1.doubanio.com/view/subject/s/public/s33657908.jpg" alt="">
                         <h3 class="text-center">长安客</h3>
                     </div>
                 </li>
                 <li class="col-xs-12 col-md-6">
                     <div class="card">
-                        <img src="https://img1.doubanio.com/view/subject/s/public/s33630708.jpg" alt="">
+                        <img class="img-fluid lazyload" src="https://img1.doubanio.com/view/subject/s/public/s33630708.jpg" alt="">
                         <h3 class="text-center">矮人星上的矮人</h3>
                     </div>
                 </li>
                 <li class="col-xs-12 col-md-6">
                     <div class="card">
-                        <img src="https://img3.doubanio.com/view/subject/s/public/s33640730.jpg" alt="">
+                        <img class="img-fluid lazyload" src="https://img3.doubanio.com/view/subject/s/public/s33640730.jpg" alt="">
                         <h3 class="text-center">秋园</h3>
                     </div>
                 </li>
             </ul>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="col-xs-4">1</div>
-                <div class="col-xs-8">2</div>
-                <div class="col-xs-4">3</div>
-                <div class="col-xs-8">4</div>
-            </div>
+            <h2 class="text-center" id="activity">喜欢的活动</h2>
+            <ul class="gallery row">
+                <li class="col-xs-12 col-md-6">
+                    <div class="card">
+                        <img src="https://img3.doubanio.com/pview/event_poster/median/public/bec3771112188fe.jpg" class="img-fluid lazyload" alt="">
+                        <h3 class="text-center">夏不为离 福州站</h3>
+                    </div>
+                </li>
+                <li class="col-xs-12 col-md-6">
+                    <div class="card">
+                        <img  class="img-fluid lazyload"  src="https://img1.doubanio.com/pview/event_poster/median/public/dc93fdd42f95e9c.jpg" alt="">
+                        <h3 class="text-center">我想以世纪和你在一起</h3>
+                    </div>
+                </li>
+                <li class="col-xs-12 col-md-6">
+                    <div class="card">
+                        <img class="img-fluid lazyload" src="https://img3.doubanio.com/pview/event_poster/median/public/0036e366b181510.jpg" alt="">
+                        <h3 class="text-center">梁静茹演唱会</h3>
+                    </div>
+                </li>
+                <li class="col-xs-12 col-md-6">
+                    <div class="card">
+                        <img class="img-fluid lazyload" src="https://img3.doubanio.com/pview/event_poster/median/public/2b988fcef5dd6d3.jpg" alt="">
+                        <h3 class="text-center">理查德 克莱曼钢琴音乐会</h3>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
     <footer id="footer">
@@ -216,7 +247,7 @@
                     王小波说他是一只特立独行的猪，那我就是做一只特立独行的鸟吧。交个朋友吧，扫下右侧二维码。
                 </div>
                 <div class="col-sm-12 col-md-6 right ">
-                    <img src="images/qrcode.png"  alt="">
+                    <img class="img-fluid lazyload" src="images/qrcode.png"  alt="">
                 </div>
             </div>
         </div>
