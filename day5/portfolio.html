@@ -282,7 +282,10 @@
             console.log('height', $('#menu').height(), el.clientHeight);
         })
         $('.card').click(function () {
-            _czc.push(["_trackEvent",'电影', '查看', '演唱会',1]);
+            var label = $(this).children()[1];
+            var p = $(this).parents('.container');
+            console.log('label', label.innerText);
+            _czc.push(["_trackEvent",'操作', '查看', label.innerText,1]);
         })
     </script>
     <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279016263'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1279016263%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
